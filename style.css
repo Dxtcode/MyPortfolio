@@ -188,10 +188,39 @@ section {
 }
 
 .section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  position: relative !important;
+  height: 400px !important;
+  width: 400px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Make image perfectly circular */
+.section__pic-container img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+
+}
+
+/* Neon glowing outline */
+.section__pic-container::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  border-radius: 50% !important;
+  border: none !important;
+
+  box-shadow:
+    0 0 10px #00f0ff,
+    0 0 20px #00f0ff,
+    0 0 40px #00f0ff,
+    0 0 80px #00f0ff,
+     inset 0 0 20px #00f0ff !important;
+
+  pointer-events: none !important;
 }
 
 .section__text {
