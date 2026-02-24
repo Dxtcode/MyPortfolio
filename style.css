@@ -8,6 +8,21 @@
  
 }
 
+
+#desktop-nav {
+  position: sticky;
+  top: 0px;              
+  z-index: 1000;
+
+  width: 90%;
+  margin: 0 auto;         
+
+  border-radius: 50px;
+  background: #1f242d;
+
+  padding: 15px 30px;
+}
+
 :root{
   --bg-color: #1f242d;
   --second-bg-color: #323946;
@@ -75,8 +90,8 @@ a.active {
   font-weight: bold;
   color: white;
 }
-.logo .highlight {
-  color: var(--main-color);
+.highlight {
+  color: var(--main-color) !important;
 }
 
 .logo:hover {
@@ -87,12 +102,12 @@ a.active {
 
 #hamburger-nav {
   display: none;
-
+  
 }
 
 .hamburger-menu {
   position: relative;
-  display: inline-block;
+
 }
 
 .hamburger-icon {
@@ -102,6 +117,7 @@ a.active {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  z-index: 1001;
 }
 
 .hamburger-icon span {
@@ -109,27 +125,55 @@ a.active {
   height: 2px;
   background-color: white;
   transition: all 0.3 ease-in-out;
+  
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 998;
 }
 
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
 .menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  height: 100vh;
+  background: #1f242d;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 120px 40px 40px 40px; /* clean spacing */
+  gap: 25px;
+
+  list-style: none;
+  transition: right 0.3s ease;
+  z-index: 999;
+
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.4);
 }
 
 .menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
+  color: white;
+  font-size: 1.4rem;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: 0.3s;
+}
+
+.menu-links a:hover {
+  color: #0ef;
 }
 
 .menu-links li {
@@ -137,7 +181,7 @@ a.active {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  right: 0;
 }
 
 .hamburger-icon.open span:first-child {
@@ -185,6 +229,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+   scroll-margin-top: 100px;
 }
 
 .section__pic-container {
@@ -242,6 +287,8 @@ section {
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  color: white;
+  
 }
 
 .title {
@@ -333,12 +380,6 @@ section {
   gap: 1rem;
 }
 
-/* HOME SECTION */
-
-#home {
-  position: relative;
-}
-
 /* ABOUT SECTION */
 
 #about {
@@ -362,8 +403,8 @@ section {
 }
 
 .about-pic {
-   border-radius: 2rem;
- object-fit: cover;
+  border-radius: 2rem;
+  object-fit: cover;
   object-position: top center;
 
 }
