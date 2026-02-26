@@ -155,7 +155,7 @@ a.active {
   display: flex;
   flex-direction: column;
 
-  padding: 120px 40px 40px 40px; /* clean spacing */
+   padding: 0 40px 40px 40px;
   gap: 25px;
 
   list-style: none;
@@ -165,11 +165,18 @@ a.active {
   box-shadow: -10px 0 40px rgba(0, 0, 0, 0.4);
 }
 
+.logo-line {
+  border: none;
+  border-bottom: 2px solid #00f0ff;
+  width: 35vh; 
+  margin: 5px 0 0 0;
+}
 .menu-links a {
   color: white;
   font-size: 1.4rem;
   text-decoration: none;
   transition: 0.3s;
+  margin-left: 1px;
 }
 
 .menu-links a:hover {
@@ -183,35 +190,15 @@ a.active {
 .menu-links.open {
   right: 0;
 }
-
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
+.sidebar-logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 20px;   
 }
-
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-/* SECTIONS */
 
 section {
-  padding-top: 4vh;
+  padding-top: 15vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
