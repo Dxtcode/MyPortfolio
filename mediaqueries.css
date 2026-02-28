@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -101,3 +101,10 @@
     text-align: justify;
   }
 }
+
+@media (max-width: 768px) {
+  .section__pic-container {
+    max-width: 250px;   
+  }
+}
+
