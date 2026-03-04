@@ -36,6 +36,51 @@ html {
   scroll-behavior: smooth;
 }
 
+.text-container p {
+   color: #C9D1D9;
+   margin-top: 0;
+   text-align: justify;
+}
+
+#myBtn {
+  color:rgb(85, 85, 85);
+  background-color: var(--main-color);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.3333px;
+  font-display: swap;
+  border: none;             /* optional: remove default border */
+  padding: 16px;        /* optional: some padding */
+  cursor: pointer;          /* show pointer on hover */
+  border-radius: 45px;       /* optional: rounded corners */
+  transition: background 0.3s ease, color 0.3s ease; /* smooth hover effect */
+  margin-top: 10px;
+  width: 8rem;
+  height: 3rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  transition: .5s ease;
+  min-width: 150px; 
+}
+
+#myBtn:hover {
+    box-shadow: none;
+}
+#more {
+  display: none;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding-top: 0;        
+}
+
+#more.show {
+  display: inline; /* or block if multiline */
+  max-height: 200px; /* enough to show content */
+  opacity: 1;
+}
+
 p {
   color: rgb(85, 85, 85);
 }
@@ -411,16 +456,17 @@ section {
 }
 
 .about-containers {
+  display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
 .about-details-container {
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem; 
 }
-
 .about-containers,
 .about-details-container {
   display: flex;

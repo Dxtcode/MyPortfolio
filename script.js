@@ -36,6 +36,17 @@ arrow.addEventListener("click", () => {
   });
 });
 
+function toggleReadMore() {
+  const dots = document.getElementById("dots");
+  const moreText = document.getElementById("more");
+  const btn = document.getElementById("myBtn");
+
+  // Toggle a CSS class to show/hide the extra text
+  moreText.classList.toggle("show");
+  dots.style.display = moreText.classList.contains("show") ? "none" : "inline";
+  btn.textContent = moreText.classList.contains("show") ? "Read less" : "Read more";
+}
+
 window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY;
   const windowHeight = window.innerHeight;
