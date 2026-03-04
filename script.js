@@ -14,19 +14,22 @@ function toggleMenu() {
   closeBtn.classList.add("close");
   overlay.classList.toggle('open');
   window.addEventListener("resize", updateOverlay);
+  document.body.classList.toggle("no-scroll");
   updateOverlay();
 }
 
 function updateOverlay() {
   if (window.innerWidth >= 1200) {
     overlay.classList.remove("open");
+    document.body.classList.remove("no-scroll"); // allow scroll on desktop
   } else if (menu.classList.contains("open")) {
     overlay.classList.add("open");
+     document.body.classList.add("no-scroll"); // disable scroll
   } else {
     overlay.classList.remove("open");
+      document.body.classList.remove("no-scroll"); // allow scroll
   }
 }
-
 arrow.addEventListener("click", () => {
   profileSection .scrollIntoView({
     behavior: "smooth"

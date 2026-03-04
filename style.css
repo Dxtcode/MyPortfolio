@@ -598,10 +598,14 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 10vh;
+  height: 26vh;
   margin: 0 1rem;
 }
 
 footer p {
   text-align: center;
+}
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
