@@ -50,11 +50,11 @@ html {
   font-weight: 600;
   font-size: 13.3333px;
   font-display: swap;
-  border: none;             /* optional: remove default border */
-  padding: 16px;        /* optional: some padding */
-  cursor: pointer;          /* show pointer on hover */
-  border-radius: 45px;       /* optional: rounded corners */
-  transition: background 0.3s ease, color 0.3s ease; /* smooth hover effect */
+  border: none;            
+  padding: 16px;       
+  cursor: pointer;         
+  border-radius: 45px;       
+  transition: background 0.3s ease, color 0.3s ease; 
   margin-top: 10px;
   width: 8rem;
   height: 3rem;
@@ -68,21 +68,22 @@ html {
 }
 #more {
   display: none;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
   overflow: hidden;
   max-height: 0;
+  display: block;        
   opacity: 0;
   padding-top: 0;        
 }
 
 #more.show {
-  display: inline; /* or block if multiline */
-  max-height: 200px; /* enough to show content */
+  display: inline; 
+  max-height: 200px;
   opacity: 1;
+  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease;
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: var(--text-color)
 }
 
 /* TRANSITION */
@@ -253,7 +254,6 @@ a.active {
 }
 section {
   padding-top: 20vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -363,8 +363,15 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: var(--main-color);
+ 
 }
-
+/* .about-header{
+  display: flex;
+  align-items: center;  
+  margin-left: 50px;
+  gap: 8px;  
+} */
 .socials-container a {
   display: inline-flex;
   justify-content: center;
@@ -517,13 +524,28 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: var(--main-color);
+  background: var(--second-bg-color);
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
   text-align: center;
 }
-
+.bx-code-alt {
+  color: var(--main-color);
+  font-size: 60px; 
+  font-weight: 500;
+  font-style: normal;
+}
+.bx-book-reader{
+  color: var(--main-color);
+  font-size: 60px; 
+  font-weight: 500;
+  font-style: normal;
+}
+.bx-medal{
+  color: var(--main-color);
+  font-size: 60px; 
+  font-weight: 500;
+  font-style: normal;
+}
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -553,7 +575,13 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-
+.about-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.about-details-text{
+  color: #C9D1D9;
+}
 .article-container {
   display: flex;
   text-align: initial;
