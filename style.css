@@ -465,7 +465,7 @@ section {
 .about-containers {
   display: flex;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .about-details-container {
@@ -574,6 +574,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 2rem;
 }
 .about-title {
   font-size: 2rem;
