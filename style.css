@@ -82,6 +82,7 @@ html {
   transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease;
 }
 
+
 p {
   color: var(--text-color)
 }
@@ -633,29 +634,57 @@ article .icon {
 /* CONTACT */
 
 #contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
+  position: relative;
 }
 
-/* .contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-} */
+/* FORM CONTAINER */
+.contact-info-container form{
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* INPUT ROW */
+.input-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.contact-info-container input,
+.contact-info-container textarea{
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.05);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+/* TEXTAREA */
+.contact-info-container textarea{
+  width: 100%;
+  min-height: 220px;
+  margin-bottom: 25px;
+  resize: none;
+}
+
+/* PLACEHOLDER */
+.contact-info-container input::placeholder,
+.contact-info-container textarea::placeholder{
+  color: rgba(255,255,255,0.6);
+}
 
 .contact-info-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+  flex-direction: column;
+  margin-top: 4rem;
 }
 
 .contact-info-container p {
@@ -668,6 +697,25 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+}
+
+/* SEND BUTTON */
+.send-btn{
+  display: block;
+  margin: auto;
+  background: var(--main-color) !important;
+  color: rgb(85,85,85);
+  border: none;
+  padding: 14px 40px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 20px var(--main-color);
+  transition: .3s;
+}
+
+.send-btn:hover{
+  box-shadow: none;
 }
 
 /* FOOTER SECTION */
