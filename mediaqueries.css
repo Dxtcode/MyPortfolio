@@ -108,10 +108,21 @@
   }
 }
 
-@media (max-width:768px){
+@media (max-width: 768px){
+
+  .title{
+    font-size: 2.3rem;
+  }
 
   .input-box{
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
 }
+
+/* @media (max-width: 768px){
+  .details-container{
+    flex-direction: column;
+  }
+
+} */
