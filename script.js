@@ -97,6 +97,11 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.title, .section__text > *', { origin: 'top' });
+ScrollReveal().reveal('.section__pic-container', {origin: 'bottom'});
+ScrollReveal().reveal('.about-details-container', {origin: 'bottom'});
+ScrollReveal().reveal('.experience-details-container', {origin: 'bottom'});
+ScrollReveal().reveal('.contact-info-container', {origin: 'bottom'});
+
 
 
 let public_key = "AYj9_qieVeCWBybGn";
