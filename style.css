@@ -23,7 +23,7 @@ input:-webkit-autofill:active {
   position: sticky;
   top: 0px;              
   z-index: 900;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;         
   background: #1f242d;
   padding: 15px 30px;
@@ -281,7 +281,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
-   scroll-margin-top: 100px;
+  scroll-margin-top: 100px;
 }
 
 
@@ -411,6 +411,7 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  
 }
 
 /* BUTTONS */
@@ -575,17 +576,21 @@ section {
   position: relative;
 }
 
+
+#experience p {
+  color: #C9D1D9;
+}
+
 .experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
+  color: var(--text-color);
   margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .experience-details-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   margin-top: 4rem;
 }
 .about-title {

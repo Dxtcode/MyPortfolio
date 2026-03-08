@@ -97,3 +97,57 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.title, .section__text > *', { origin: 'top' });
+
+
+let public_key = "AYj9_qieVeCWBybGn";
+let service_id = "default_service";
+let template_id = "template_f4u6bj1";
+
+emailjs.init(public_key);
+
+document.getElementById("form").addEventListener("submit",function(e) {
+  e.preventDefault();
+
+let formdata = document.getElementById("form");
+
+  emailjs.sendForm(service_id, template_id, formdata).then(
+        ()=>{
+           console.log(formdata)
+            alert("Email sent successfully!");
+            formdata.reset();
+        },
+        (error)=>{
+            alert(`Something Went Wrong Try Again : ${JSON.stringify(error)}`);
+        }
+    );
+
+});
+
+
+// Attach event listener to the form
+// window.onload = function() {
+//   const form = document.querySelector("form");
+
+//   form.addEventListener("submit", function(event) {
+//     event.preventDefault(); // prevent page reload
+
+//     // Collect form data
+//     const templateParams = {
+//       name: document.getElementById("name").value,
+//       email: document.getElementById("email").value,
+//       title : document.getElementById("subject").value,
+//       message: document.getElementById("message").value
+//     };
+
+//     // Send email using EmailJS
+//     emailjs.send("service_mw1lbe9", "template_f4u6bj1", templateParams)
+//       .then(function(response) {
+//         alert("Email sent successfully!");
+//         console.log("SUCCESS!", response.status, response.text);
+//       }, function(error) {
+//         alert("Failed to send email. Check console for details.");
+//         console.error("FAILED...", error);
+//       });
+
+//   });
+// };
