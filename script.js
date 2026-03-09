@@ -103,10 +103,9 @@ ScrollReveal().reveal('.experience-details-container', {origin: 'bottom'});
 ScrollReveal().reveal('.contact-info-container', {origin: 'bottom'});
 
 
-
 let public_key = "AYj9_qieVeCWBybGn";
 let service_id = "default_service";
-let template_id = "template_f4u6bj1";
+let template_id = "template_d4rysbv";
 
 emailjs.init(public_key);
 
@@ -114,9 +113,6 @@ document.getElementById("form").addEventListener("submit",function(e) {
   e.preventDefault();
 
 let formdata = document.getElementById("form");
-
-console.log(formdata)
-
   emailjs.sendForm(service_id, template_id, formdata).then(
         ()=>{
            console.log(formdata)
