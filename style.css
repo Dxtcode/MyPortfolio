@@ -24,7 +24,6 @@ input:-webkit-autofill:active {
   width: 100%;
   margin: 0 auto;
   background: #1f242d;
-  padding: 15px 30px;
 }
 
 :root {
@@ -370,12 +369,7 @@ section {
   text-align: center;
   color: var(--main-color);
 }
-.about-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
+
 .socials-container a {
   display: inline-flex;
   justify-content: center;
