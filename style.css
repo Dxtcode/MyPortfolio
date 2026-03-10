@@ -361,7 +361,7 @@ section {
 .section__text__p1 {
   text-align: center;
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 1.17em;
 
 }
 
@@ -577,9 +577,9 @@ section {
 }
 
 
-#experience p {
+/* #experience p {
   color: #C9D1D9;
-}
+} */
 
 .experience-sub-title {
   color: var(--text-color);
