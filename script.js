@@ -1,10 +1,10 @@
 const menu = document.querySelector(".menu-links");
 const icon = document.querySelector(".hamburger-icon");
-const overlay = document.querySelector('.overlay');
-const sections = document.querySelectorAll('section');
-const closeBtn = document.querySelector('.bx-x');
+const overlay = document.querySelector(".overlay");
+const sections = document.querySelectorAll("section");
+const closeBtn = document.querySelector(".bx-x");
 const arrow = document.querySelector(".bx-up-arrow-alt");
-const profileSection  = document.querySelector("#profile");
+const profileSection = document.querySelector("#profile");
 const navLinks = document.querySelectorAll(".nav-links li a");
 
 function toggleMenu() {
@@ -12,7 +12,7 @@ function toggleMenu() {
   icon.classList.toggle("open");
   closeBtn.addEventListener("click", toggleMenu);
   closeBtn.classList.add("close");
-  overlay.classList.toggle('open');
+  overlay.classList.toggle("open");
   window.addEventListener("resize", updateOverlay);
   document.body.classList.toggle("no-scroll");
   updateOverlay();
@@ -24,15 +24,15 @@ function updateOverlay() {
     document.body.classList.remove("no-scroll"); // allow scroll on desktop
   } else if (menu.classList.contains("open")) {
     overlay.classList.add("open");
-     document.body.classList.add("no-scroll"); // disable scroll
+    document.body.classList.add("no-scroll"); // disable scroll
   } else {
     overlay.classList.remove("open");
-      document.body.classList.remove("no-scroll"); // allow scroll
+    document.body.classList.remove("no-scroll"); // allow scroll
   }
 }
 arrow.addEventListener("click", () => {
-  profileSection .scrollIntoView({
-    behavior: "smooth"
+  profileSection.scrollIntoView({
+    behavior: "smooth",
   });
 });
 
@@ -44,7 +44,9 @@ function toggleReadMore() {
   // Toggle a CSS class to show/hide the extra text
   moreText.classList.toggle("show");
   dots.style.display = moreText.classList.contains("show") ? "none" : "inline";
-  btn.textContent = moreText.classList.contains("show") ? "Read less" : "Read more";
+  btn.textContent = moreText.classList.contains("show")
+    ? "Read less"
+    : "Read more";
 }
 
 window.addEventListener("scroll", () => {
@@ -56,14 +58,13 @@ window.addEventListener("scroll", () => {
   } else {
     arrow.classList.remove("show");
   }
-
 });
 
-let isClickScrolling = false; 
+let isClickScrolling = false;
 function removeActive() {
-  navLinks.forEach(l => l.classList.remove("active"));
+  navLinks.forEach((l) => l.classList.remove("active"));
 }
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     removeActive();
     link.classList.add("active");
@@ -75,9 +76,9 @@ navLinks.forEach(link => {
 });
 
 window.addEventListener("scroll", () => {
-  if (isClickScrolling) return; 
+  if (isClickScrolling) return;
   const scrollPos = window.scrollY + 100;
-  sections.forEach(section => {
+  sections.forEach((section) => {
     const top = section.offsetTop;
     const bottom = top + section.offsetHeight;
     const id = section.getAttribute("id");
@@ -91,38 +92,41 @@ window.addEventListener("scroll", () => {
 
 ScrollReveal({
   reset: true,
-  distance: '80px',
+  distance: "80px",
   duration: 2000,
-  delay: 1
+  delay: 1,
 });
 
-ScrollReveal().reveal('.title, .section__text > *', { origin: 'top' });
-ScrollReveal().reveal('.section__pic-container', {origin: 'bottom'});
-ScrollReveal().reveal('.about-details-container', {origin: 'bottom'});
-ScrollReveal().reveal('.experience-details-container', {origin: 'bottom'});
-ScrollReveal().reveal('.contact-info-container', {origin: 'bottom'});
+ScrollReveal().reveal(".title, .section__text > *", { origin: "top" });
+ScrollReveal().reveal(".section__pic-container", { origin: "bottom" });
+ScrollReveal().reveal(".about-details-container", { origin: "bottom" });
+ScrollReveal().reveal(".experience-details-container", { origin: "bottom" });
+ScrollReveal().reveal(".contact-info-container", { origin: "bottom" });
 
+function closePopup() {
+  popup.style.display = "none";
+  overlay.classList.remove("open");
+}
 
+const popup = document.getElementById("successPopup");
 let public_key = "AYj9_qieVeCWBybGn";
 let service_id = "default_service";
 let template_id = "template_d4rysbv";
 
 emailjs.init(public_key);
-
-document.getElementById("form").addEventListener("submit",function(e) {
+document.getElementById("form").addEventListener("submit", function (e) {
   e.preventDefault();
 
-let formdata = document.getElementById("form");
+  let formdata = document.getElementById("form");
   emailjs.sendForm(service_id, template_id, formdata).then(
-        ()=>{
-           console.log(formdata)
-            alert("Email sent successfully!");
-            formdata.reset();
-        },
-        (error)=>{
-            alert(`Something Went Wrong Try Again : ${JSON.stringify(error)}`);
-        }
-    );
+    () => {
+      popup.style.display = "flex";
 
+      document.body.classList.add("no-scroll"); 
+      formdata.reset();
+    },
+    (error) => {
+      alert(`Something Went Wrong Try Again : ${JSON.stringify(error)}`);
+    },
+  );
 });
-

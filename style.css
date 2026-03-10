@@ -5,41 +5,38 @@
 * {
   margin: 0;
   padding: 0;
- 
 }
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 1000px #2a2f3a inset !important;   /* ← change this color */
-    -webkit-text-fill-color: #e2e8f0 !important;                 /* text color – light gray/white for dark bg */
-    box-shadow: 0 0 0 1000px #2a2f3a inset !important;           /* for non-webkit fallback */
-    transition: background-color 5000s ease-in-out 0s;           /* prevents flash / revert */
-    background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px #2a2f3a inset !important; /* ← change this color */
+  -webkit-text-fill-color: #e2e8f0 !important; /* text color – light gray/white for dark bg */
+  box-shadow: 0 0 0 1000px #2a2f3a inset !important; /* for non-webkit fallback */
+  transition: background-color 5000s ease-in-out 0s; /* prevents flash / revert */
+  background-color: transparent !important;
 }
-
 
 #desktop-nav {
   position: sticky;
-  top: 0px;              
+  top: 0px;
   z-index: 900;
   width: 100%;
-  margin: 0 auto;         
+  margin: 0 auto;
   background: #1f242d;
   padding: 15px 30px;
 }
 
-:root{
+:root {
   --bg-color: #1f242d;
   --second-bg-color: #323946;
-  --text-color:#fff;
-  --main-color:#0ef;
-
+  --text-color: #fff;
+  --main-color: #0ef;
 }
 body {
   font-family: "Poppins", sans-serif;
   background: var(--bg-color);
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 html {
@@ -47,54 +44,58 @@ html {
 }
 
 .text-container p {
-   color: #C9D1D9;
-   margin-top: 0;
-   text-align: justify;
+  color: #c9d1d9;
+  margin-top: 0;
+  text-align: justify;
 }
 
 #myBtn {
-  color:rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
   background-color: var(--main-color);
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13.3333px;
   font-display: swap;
-  border: none;            
-  padding: 16px;       
-  cursor: pointer;         
-  border-radius: 45px;       
-  transition: background 0.3s ease, color 0.3s ease; 
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  border-radius: 45px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
   margin-top: 10px;
   width: 8rem;
   height: 3rem;
   box-shadow: 0 0 1rem var(--main-color);
-  transition: .5s ease;
-  min-width: 150px; 
+  transition: 0.5s ease;
+  min-width: 150px;
 }
 
 #myBtn:hover {
-    box-shadow: none;
+  box-shadow: none;
 }
 #more {
   display: none;
   overflow: hidden;
   max-height: 0;
-  display: block;        
+  display: block;
   opacity: 0;
-  padding-top: 0;        
+  padding-top: 0;
 }
 
 #more.show {
-  display: inline; 
+  display: inline;
   max-height: 200px;
   opacity: 1;
-  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.5s ease,
+    padding 0.3s ease;
 }
 
-
 p {
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 /* TRANSITION */
@@ -157,12 +158,10 @@ a.active {
 
 #hamburger-nav {
   display: none;
- 
 }
 
 .hamburger-menu {
   position: relative;
-
 }
 
 .hamburger-icon {
@@ -180,7 +179,6 @@ a.active {
   height: 2px;
   background-color: white;
   transition: all 0.3 ease-in-out;
-  
 }
 .overlay {
   position: fixed;
@@ -209,7 +207,7 @@ a.active {
   display: flex;
   flex-direction: column;
 
-   padding: 0 40px 40px 40px;
+  padding: 0 40px 40px 40px;
   gap: 25px;
 
   list-style: none;
@@ -250,7 +248,7 @@ a.active {
   font-size: 1.8rem;
   font-weight: 600;
   color: white;
-  margin-top: 15px;   
+  margin-top: 15px;
 }
 .sidebar-logo i {
   font-size: 28px;
@@ -284,18 +282,16 @@ section {
   scroll-margin-top: 100px;
 }
 
-
 .section__pic-container {
   position: relative;
   width: 100%;
-  max-width: 400px;     
-  aspect-ratio: 1 / 1;   
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 /* IMAGE - PERFECT CIRCLE */
 
@@ -357,53 +353,48 @@ section {
   font-weight: 600;
 }
 
-
 .section__text__p1 {
   text-align: center;
   color: var(--text-color);
   font-size: 1.17em;
-
 }
 
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
   color: white;
-  
 }
 
 .title {
   font-size: 3rem;
   text-align: center;
   color: var(--main-color);
- 
 }
 .about-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 .socials-container a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 1.5rem 3rem 1rem; 
+  margin: 2rem 1.5rem 3rem 1rem;
   width: 3rem;
   height: 3rem;
   background: transparent;
-  border: .2rem solid var(--main-color);
+  border: 0.2rem solid var(--main-color);
   border-radius: 50%;
   font-size: 2rem;
   color: var(--main-color);
-  transition: .5s ease;
-  
+  transition: 0.5s ease;
 }
 
 .socials-container a:hover {
- background-color: var(--main-color);
- color: var(--second-bg-color);
- box-shadow: 0 0 1rem var(--main-color)
+  background-color: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
 /* ICONS */
@@ -411,7 +402,6 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
-  
 }
 
 /* BUTTONS */
@@ -435,7 +425,6 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   display: inline-block;
   border-radius: 4rem;
-
 }
 
 .btn-color-1:hover,
@@ -448,7 +437,7 @@ section {
   background-color: var(--main-color);
   color: var(--second-bg-color);
   box-shadow: 0 0 1rem var(--main-color);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .btn-color-1:hover {
@@ -457,12 +446,11 @@ section {
 
 .btn-color-2 {
   background: transparent;
-  border: .1rem solid var(--main-color);
+  border: 0.1rem solid var(--main-color);
   color: var(--main-color);
-  
 }
 .btn-color-1 {
-  border: .1rem solid var(--main-color);
+  border: 0.1rem solid var(--main-color);
 }
 
 .btn-container {
@@ -485,7 +473,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 1rem; 
+  gap: 1rem;
 }
 .about-containers,
 .about-details-container {
@@ -496,7 +484,6 @@ section {
   border-radius: 2rem;
   object-fit: cover;
   object-position: top center;
-
 }
 .bx-up-arrow-alt {
   position: fixed;
@@ -514,14 +501,14 @@ section {
   z-index: 1000;
 
   background: transparent;
-  border: .2rem solid var(--main-color);
+  border: 0.2rem solid var(--main-color);
   border-radius: 50%;
   font-size: 2rem;
   color: var(--main-color);
 
-  opacity: 0;          /* hidden */
-  visibility: hidden;  /* hidden */
-  transition: .4s ease;
+  opacity: 0; /* hidden */
+  visibility: hidden; /* hidden */
+  transition: 0.4s ease;
 }
 
 .bx-up-arrow-alt.show {
@@ -543,19 +530,19 @@ section {
 }
 .bx-code-alt {
   color: var(--main-color);
-  font-size: 60px; 
+  font-size: 60px;
   font-weight: 500;
   font-style: normal;
 }
-.bx-book-reader{
+.bx-book-reader {
   color: var(--main-color);
-  font-size: 60px; 
+  font-size: 60px;
   font-weight: 500;
   font-style: normal;
 }
-.bx-medal{
+.bx-medal {
   color: var(--main-color);
-  font-size: 60px; 
+  font-size: 60px;
   font-weight: 500;
   font-style: normal;
 }
@@ -576,11 +563,6 @@ section {
   position: relative;
 }
 
-
-/* #experience p {
-  color: #C9D1D9;
-} */
-
 .experience-sub-title {
   color: var(--text-color);
   margin-bottom: 2rem;
@@ -597,8 +579,8 @@ section {
   font-size: 2rem;
   font-weight: 600;
 }
-.about-details-text{
-  color: #C9D1D9;
+.about-details-text {
+  color: #c9d1d9;
 }
 .article-container {
   display: flex;
@@ -647,27 +629,27 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-#contact{
- position: relative;
+#contact {
+  position: relative;
 }
 
 .contact-wrapper {
   width: 100%;
-  max-width: 900px;   /* or whatever max width you want */
-  margin: 0 auto;     /* center horizontally */
+  max-width: 900px; /* or whatever max width you want */
+  margin: 0 auto; /* center horizontally */
   display: flex;
   flex-direction: column;
   align-items: center; /* center content inside */
 }
 
-form{
+form {
   width: 100%;
   max-width: 700px;
   margin-top: 80px !important;
 }
 
 /* title */
-.title{
+.title {
   font-size: 3rem;
   font-weight: 700;
   color: #22d3ee;
@@ -675,22 +657,96 @@ form{
 }
 
 /* form container */
-.contact-info-container{
+.contact-info-container {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
+
+/* Popup overlay */
+.popup-overlay{
+  position: fixed;
+  inset: 0;              /* covers entire viewport */
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0,0,0,0.6);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+/* Popup box */
+.popup-box{
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  width: 320px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+  animation: popupFade 0.3s ease;
+}
+
+/* Success check icon */
+.check-icon{
+  font-size: 55px;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.popup-box h2{
+  color: #222;
+  margin-bottom: 8px;
+}
+
+/* Text */
+.popup-box p{
+  color: #555;
+}
+
+/* Button */
+.popup-box button{
+  margin-top: 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-box button:hover{
+  background: #218838;
+}
+
+/* Animation */
+@keyframes popupFade{
+  from{
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 /* form */
-form{
+form {
   width: 100%;
   max-width: 1000px; /* increase this */
   margin: 0 auto;
 }
 
 /* input rows */
-.input-box{
+.input-box {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
@@ -698,7 +754,7 @@ form{
 
 /* input + textarea style */
 input,
-textarea{
+textarea {
   width: 100%;
   padding: 18px 22px;
   border-radius: 12px;
@@ -713,25 +769,24 @@ textarea{
 
 /* focus effect */
 input:focus,
-textarea:focus{
+textarea:focus {
   box-shadow: 0 0 0 2px #22d3ee;
 }
 
 /* textarea */
-textarea{
+textarea {
   min-height: 220px;
   margin-bottom: 10px;
 }
 
-
 /* SEND BUTTON */
-.send-btn{
+.send-btn {
   display: block;
   width: 40%;
   min-width: 200px;
   max-width: 400px;
   background: var(--main-color) !important;
-  color: rgb(85,85,85) !important;
+  color: rgb(85, 85, 85) !important;
   border: none;
   padding: 16px 40px !important;
   margin: 20px auto;
@@ -739,11 +794,11 @@ textarea{
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 0 20px var(--main-color);
-  transition: .3s;
+  transition: 0.3s;
   margin-top: 10px;
 }
 
-.send-btn:hover{
+.send-btn:hover {
   box-shadow: none;
 }
 
@@ -757,7 +812,7 @@ footer {
 footer p {
   text-align: center;
   margin-top: 100px;
-  color: rgb(85,85,85);
+  color: rgb(85, 85, 85);
 }
 .no-scroll {
   overflow: hidden;

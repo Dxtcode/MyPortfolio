@@ -1,401 +1,468 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-     <!-- box-icon -->
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <!-- box-icon -->
+    <!-- box-icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- box-icon -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <div class="hero">
-    <div class="overlay"></div>
-    <nav id="desktop-nav">
-     <div class="logo">Port<span class="highlight">folio</span></div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#profile">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-     <div class="logo">Port<span class="highlight">folio</span></div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+      <div class="overlay"></div>
+      <nav id="desktop-nav">
+        <div class="logo">Port<span class="highlight">folio</span></div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="menu-links">
-        <div class="sidebar-logo">Port<span class="highlight">folio</span>
-          <i class='bx bx-x' ></i>
-          <hr class="logo-line">
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Port<span class="highlight">folio</span></div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <div class="menu-links">
+            <div class="sidebar-logo">
+              Port<span class="highlight">folio</span>
+              <i class="bx bx-x"></i>
+              <hr class="logo-line" />
+            </div>
+            <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic-original-no-bg.png" alt="Portfolio profile picture" />
-      </div>
-      <div class="section__text">
-        <h3>Hello, It's Me</h3>
-        <h1 class="name">Dexter Alvarado</h1>
-        <p class="section__text__p2">
-          And I'm a Mid-level&nbsp;<span class="highlight">Software Developer</span>
-        </p>
-        
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Dexter_Alvarado_Resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Me
-          </button>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic-original-no-bg.png"
+            alt="Portfolio profile picture"
+          />
         </div>
-        <div class="socials-container">
-          <a href="https://www.facebook.com/dext.alvarado.9"><i class='bx bxl-facebook'></i></a>
-          <a href="https://www.linkedin.com/in/dexter-alvarado-aa3326241/"><i class='bx bxl-linkedin' ></i></a>
-          <a href="https://github.com/Dxtcode"><i class='bx bxl-github' ></i></a>
+        <div class="section__text">
+          <h3>Hello, It's Me</h3>
+          <h1 class="name">Dexter Alvarado</h1>
+          <p class="section__text__p2">
+            And I'm a Mid-level&nbsp;<span class="highlight"
+              >Software Developer</span
+            >
+          </p>
+
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/Dexter_Alvarado_Resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href = './#contact'"
+            >
+              Contact Me
+            </button>
+          </div>
+          <div class="socials-container">
+            <a
+              href="https://www.facebook.com/dext.alvarado.9"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/dexter-alvarado-aa3326241/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/Dxtcode"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
+      </section>
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <div class="about-header">
+                  <i class="bx bx-code-alt"></i>
+                  <h3 class="about-title">Experience</h3>
+                </div>
+                <p class="about-details-text">
+                  2+ years <br />Full Stack Development
+                </p>
+              </div>
+              <div class="details-container">
+                <div class="about-header">
+                  <i class="bx bx-medal"></i>
+                  <h3 class="about-title">Certificates</h3>
+                </div>
+                <p class="about-details-text">
+                  SCC IT Talk Speaker<br />Best OJT Experience<br />Rapid Mendix
+                  Developer<br />Best in Computer Programming
+                </p>
+              </div>
+              <div class="details-container">
+                <div class="about-header">
+                  <i class="bx bx-book-reader"></i>
+                  <h3 class="about-title">Education</h3>
+                </div>
+                <p class="about-details-text">
+                  BSIT<br />Major in Computer Programming
+                </p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                I am a mid-level Full Stack Software Developer with extensive
+                experience contributing to enterprise applications across both
+                frontend and backend, database management, and system
+                integrations. I have played a key role in the development and
+                delivery of a Finance Management Application for an airline,
+                supporting core financial operations including transaction
+                processing, reporting, SAP integration, and secure API
+                management. In my work, I design and develop secure RESTful APIs
+                using Apigee, implement authentication and authorization
+                protocols, and optimize API performance to handle high-volume
+                enterprise workloads. I integrate applications with SAP for
+                real-time financial data exchange, managing invoice processing,
+                payment updates, and financial reporting, while troubleshooting
+                and resolving interface issues to ensure smooth operations. I am
+                experienced in <span id="dots">..... </span
+                ><span id="more">
+                  database management with MSSQL, creating optimized queries,
+                  stored procedures, and views to ensure data integrity,
+                  accuracy, and high performance. I also containerize backend
+                  services using Docker, supporting CI/CD pipelines and reliable
+                  production deployments. Working in collaborative, Agile
+                  environments, I coordinate closely with frontend developers,
+                  QA teams, business analysts, and product owners, actively
+                  participating in sprint planning, daily stand-ups, and
+                  cross-functional problem solving. My contributions have
+                  improved system performance, enhanced security, and helped
+                  deliver stable and scalable enterprise solutions. I am
+                  passionate about solving complex technical challenges,
+                  improving workflows, and building systems that deliver real
+                  business value. I continuously seek opportunities to enhance
+                  my skills in fullstack development, cloud technologies, and
+                  enterprise integration, ensuring the solutions I contribute to
+                  are efficient, reliable, and maintainable.
+                </span>
+              </p>
+              <button onclick="toggleReadMore()" id="myBtn">Read more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <div class="about-header">
-              <i class='bx bx-code-alt' ></i>
-              <h3 class = "about-title">Experience</h3>
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SASS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Experience</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Angular</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Vue</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
               </div>
-              <p class="about-details-text">2+ years <br />Full Stack Development</p>
             </div>
             <div class="details-container">
-              <div class="about-header">
-            <i class='bx bx-medal' ></i>
-              <h3 class="about-title">Certificates</h3>
+              <h2 class="experience-sub-title">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MSSQL</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Apigee</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Docker</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Sharepoint</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
               </div>
-              <p class="about-details-text">SCC IT Talk Speaker<br/>Best OJT Experience<br/>Rapid Mendix Developer<br/>Best in Computer Programming</p>
-            </div>
-            <div class="details-container">
-              <div class="about-header">
-             <i class='bx bx-book-reader'></i>
-              <h3 class="about-title">Education</h3>
-              </div>
-              <p class="about-details-text">BSIT<br />Major in Computer Programming</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-            I am a mid-level Full Stack Software Developer with extensive experience 
-            contributing to enterprise applications across both frontend and backend, 
-            database management, and system integrations. I have played a key role in
-            the development and delivery of a Finance Management Application for an 
-            airline, supporting core financial operations including transaction processing, 
-            reporting, SAP integration, and secure API management.
-            In my work, I design and develop secure RESTful APIs using Apigee, implement 
-            authentication and authorization protocols, and optimize API performance to 
-            handle high-volume enterprise workloads. I integrate applications with SAP for 
-            real-time financial data exchange, managing invoice processing, payment updates,
-            and financial reporting, while troubleshooting and resolving interface issues 
-            to ensure smooth operations. I am experienced in <span id="dots">.....
-            </span><span id="more"> database management with MSSQL, 
-            creating optimized queries, stored procedures, and views to ensure data integrity, 
-            accuracy, and high performance. I also containerize backend services using Docker, 
-            supporting CI/CD pipelines and reliable production deployments.
-            Working in collaborative, Agile environments, I coordinate closely 
-            with frontend developers, QA teams, business analysts, and product owners, actively 
-            participating in sprint planning, daily stand-ups, and cross-functional problem solving. 
-            My contributions have improved system performance, enhanced security, and helped deliver 
-            stable and scalable enterprise solutions. I am passionate about solving complex technical 
-            challenges, improving workflows, and building systems that deliver real business value. 
-            I continuously seek opportunities to enhance my skills in fullstack development, cloud technologies, 
-            and enterprise integration, ensuring the solutions I contribute to are efficient, reliable, and maintainable.
-            </span></p>
-            <button onclick="toggleReadMore()" id="myBtn">Read more</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experience</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Angular</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Vue</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title"> Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MSSQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Apigee</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Docker</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Sharepoint</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-   <section id="contact">
-     <div class="contact-wrapper">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-container">
-        <form action="#" id="form">
-          <div class="input-box">
-            <input type="text" id="name" name="name" placeholder="Full Name" required>
-            <input type="email" id="email" name="email" placeholder="Email Address" required>
-          </div>
-          <div class="input-box">
-            <!-- <input type="tel" id="number" nameplaceholder="Mobile Number"> -->
-            <input type="text" id="subject" name="subject" placeholder="Email Subject">
-          </div>
-          <textarea placeholder="Your Message" id="message" name="message"  required></textarea>
-          <input type="submit" value="Send Message" class="send-btn">
-        </form>
-      </div>
-      </div>
       </section>
-    <footer> 
-       <i class='bx bx-up-arrow-alt'></i>
-      <p>Copyright &#169; 2026 Dexter Alvarado. All Rights Reserved.</p>
-    </footer>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
-     </div>
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href = 'https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href = 'https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href = 'https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href = 'https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href = 'https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href = 'https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-wrapper">
+          <p class="section__text__p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-container">
+            <form action="#" id="form">
+              <div class="input-box">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <!-- <input type="tel" id="number" nameplaceholder="Mobile Number"> -->
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Email Subject"
+                />
+              </div>
+              <textarea
+                placeholder="Your Message"
+                id="message"
+                name="message"
+                required
+              ></textarea>
+              <input type="submit" value="Send Message" class="send-btn" />
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <i class="bx bx-up-arrow-alt"></i>
+        <p>Copyright &#169; 2026 Dexter Alvarado. All Rights Reserved.</p>
+      </footer>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+      ></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
