@@ -642,11 +642,6 @@ article .icon {
   align-items: center; /* center content inside */
 }
 
-form {
-  width: 100%;
-  max-width: 700px;
-  margin-top: 80px !important;
-}
 
 /* title */
 .title {
@@ -743,7 +738,9 @@ form {
   width: 100%;
   max-width: 1000px; /* increase this */
   margin: 0 auto;
+  margin-top: 60px;
 }
+
 
 /* input rows */
 .input-box {
